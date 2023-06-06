@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Resume - Start Bootstrap Theme</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <span class="d-block d-lg-none">DEJOYAG - WEB PORTFOLIO</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#mats">Materials</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#cd">Circuit Diagram</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#code">Code</a></li>
+                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#design">Design</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#test">Test</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Page Content-->
+        <div class="container-fluid p-0">
+            <!-- About-->
+            <section class="resume-section" id="about">
+                <div class="resume-section-content">
+                    <h1 class="mb-0">
+                        ARDUINO
+                        <span class="text-primary">COLOR SORTER </span>
+                    </h1>
+                    <div class="subheading mb-5">
+                        For questions contact me: 
+                        <a href="mailto:dejoyag782@gmail.com">Dex Joshua Curayag</a>
+                    </div>
+                    <img class="img-fluid img-profile mx-auto mb-2" src="assets/img/test.jpg" alt="...">
+                    <p class="lead mb-5">A arduino based project that utilizes TCS34725 Color Sensor to sort colored candies in separate bins. It utilizes two servo motors to move the candies into the color sensor and into the sorting bin.</p>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Experience-->
+            <section class="resume-section" id="mats">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Materials to be Used</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">TCS34725 COLOR SENSOR</h3>
+                            <img class="img-fluid img-profile mx-auto mb-2" src="assets/img/board.jpg" alt="..." />
+                            <div class="subheading mb-3">Quantity: 1</div>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary"><a href="">Buy TCS34725 Color Sensor</a></span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">SG90 Servo Motor</h3>
+                            <img class="img-fluid img-profile mx-auto mb-2" src="assets/img/servo.jpg" alt="..." />
+                            <div class="subheading mb-3">Quantity: 2</div>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary"><a href="">Buy SG90 Servo Motor</a></span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">MDF Board</h3>
+                            <img class="img-fluid img-profile mx-auto mb-2" src="assets/img/mdfboard.jpg" alt="..." />
+                            <div class="subheading mb-3">Size: 8 X 11</div> 
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary"><a href="">Buy MDF Board</a></span></div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Education-->
+            <section class="resume-section" id="cd">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Circuit Diagram</h2>
+               <div style="background-color:#303b40"> <img class="img-fluid img-profile mx-auto mb-2" src="assets/img/CicuitDia.png" alt="..." /></div>
+                    </div>     
+                </div>
+                
+            </section>
+            <hr class="m-0" />
+            <!-- Skills-->
+            <section class="resume-section" id="code">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Code</h2>
+                    <div class="subheading mb-3">The Code</div>
+                   <div style="background-color:#303b40; border-radius:2px 2px 2px 2px; padding: 5px;"> <p style="color:#30bea7;">// Including libraries<br>
+#include "Servo.h"<br>
+#include "Wire.h"<br>
+#include "Adafruit_TCS34725.h"<br>
+<br>
+// Servo positions in degrees for colors, please adjust<br>
+const int redPos = 180;<br>
+const int orangePos = 140;<br>
+const int yellowPos = 120;<br>
+const int greenPos = 110;<br>
+const int bluePos = 100;<br>
+const int nonePos = 90; // No object detected<br>
+uint16_t clearcol, red, green, blue;<br>
+float average, r, g, b;<br>
+<br>
+// Initialize Servo object<br>
+Servo myservo1, myservo2;<br>
+// Initialize Color Sensor object<br>
+// Parameters:<br> https://learn.adafruit.com/adafruit-color-sensors/program-it
+Adafruit_TCS34725<br> tcs=Adafruit_TCS34725(TCS34725_INTEGRATIONTIME_50MS, TCS34725_GAIN_1X);<br>
+// setup() runs once when the Arduino starts<br>
+void setup() {<br>
+// Serial communication for outputting values to the serial monitor<br>
+Serial.begin(9600);<br>
+Serial.println("Makerblog.at - MuMs Color Sensor");<br>
+// Check if Color Sensor is responding<br>
+if (tcs.begin()) {<br>
+// Everything is OK<br>
+Serial.println("Sensor found");<br>
+} else {<br>
+// No sensor found. Freeze the program at this point<br>
+Serial.println("TCS34725 not found... Program halted!");<br>
+while (1); // Halt!<br>
+}<br>
+// The servo is connected to PWM pin 3<br>
+myservo1.attach(9);<br>
+myservo2.attach(8);<br>
+// Move the servo to the neutral position<br>
+myservo1.write(160);<br>
+myservo2.write(180);<br>
+delay(1000);<br>
+}<br>
+<br>
+void loop() {<br>
+// Attempt color determination based on r, g, b values.<br>
+// It is best to start with red, green, and blue and adjust the threshold values<br>
+// based on the serial output.<br>
+myservo2.write(180);  // tell servo to go to a particular angle<br>
+  delay(500);<br>
+myservo2.write(135);   <br>
+delay(500); // Color measurement takes about 50ms<br>
+tcs.getRawData(&red, &green, &blue, &clearcol);<br>
+// Calculate average of RGB values<br>
+average = (red + green + blue) / 3;<br>
+// Normalize color values around 1 based on the average,<br>
+// all values should now be around 1<br>
+r = red / average;<br>
+g = green / average;<br>
+b = blue / average;<br>
+// Output clear value and normalized r, g, b values for verification<br>
+// r, g, and b should be approximately between 0.5 and 1.5.<br>
+Serial.print("\tClear:"); Serial.print(clearcol);<br>
+Serial.print("\tRed:"); Serial.print(r);<br>
+Serial.print("\tGreen:"); Serial.print(g);<br>
+Serial.print("\tBlue:"); Serial.print(b);<br>
+<br>
+if ((r > 1.20) && (r <1.30) && (g > 0.9) && (g < 1.10)  && (b > 0.70) && (b < 0.80)) {<br>
+Serial.print("\tRED");<br>
+myservo1.write(redPos);<br>
+}<br>
+else if ((r > 1.50) && (r <1.58) && (g > 0.79) && (g < 0.85)  && (b > 0.65) && (b < 0.75)) {<br>
+Serial.print("\tRED");<br>
+myservo1.write(redPos);<br>
+}<br>
+else if ((r > 1.38) && (r <1.45) && (g > 0.85) && (g < 0.92)  && (b > 0.70) && (b < 0.80)) {<br>
+Serial.print("\tRED");<br>
+myservo1.write(redPos);<br>
+}<br>
+else if ((r > 1.35) && (r <1.50) && (g > 0.80) && (g < 0.95)  && (b > 0.70) && (b < 0.85)) {<br>
+Serial.print("\tRED");<br>
+myservo1.write(redPos);<br>
+}<br>
+else if ((r > 0.85) && (r < 0.98) && (g > 1.05) && (g < 1.15)  && (b > 0.90) && (b < 1.05)) {<br>
+Serial.print("\tVIOLET");<br>
+myservo1.write(greenPos);<br>
+}<br>
+else if ((r > 0.90) && (r < 0.95) && (g > 0.80) && (g < 0.90)  && (b > 1.20) && (b < 1.29)) {<br>
+Serial.print("\tVIOLET");<br>
+myservo1.write(greenPos);<br>
+}<br>
+else if ((r > 0.89) && (r < 0.99) && (g > 0.79) && (g < 0.89)  && (b > 1.15) && (b < 1.29)) {<br>
+Serial.print("\tVIOLET");<br>
+myservo1.write(greenPos);<br>
+}<br>
+else if ((r > 0.25) && (r < 0.49) && (g > 1.15) && (g < 1.30)  && (b > 1.45) && (b < 1.55)) {<br>
+Serial.print("\tBLUE");<br>
+myservo1.write(bluePos);<br>
+}<br>
+// Yellow and orange are a bit tricky, but after some experimentation,<br>
+// these values have proven to work well for me<br>
+else if ((r > 1.09) && (r < 1.15) && (g > 1.35) && (g < 1.45)  && (b > 0.40) && (b < 0.55)) {<br>
+Serial.print("\tYELLOW");<br>
+myservo1.write(yellowPos);<br>
+}
+<br>
+else if ((r > 1.05) && (r < 1.15) && (g > 1.35) && (g < 1.45)  && (b > 0.40) && (b < 0.55)) {<br>
+Serial.print("\tYELLOW");<br>
+myservo1.write(yellowPos);<br>
+}<br>
+else if ((r > 1.45) && (r < 1.55) && (g > 0.5) && (g < 1.05)  && (b > 0.45) && (b < 0.60)) {<br>
+Serial.print("\tORANGE");<br>
+myservo1.write(orangePos);<br>
+}<br>
+else if ((r > 1.60) && (r < 1.70) && (g > 0.85) && (g < 1.05)  && (b > 0.40) && (b < 0.50)) {<br>
+Serial.print("\tORANGE");<br>
+myservo1.write(orangePos);<br>
+}<br>
+// If no condition is met, be honest<br>
+else {<br>
+Serial.print("\tNOT RECOGNIZED");<br>
+myservo1.write(nonePos);<br>
+}<br>
+// Output a newline character<br>
+Serial.println("");<br>
+// Adjust delay for serial debugging<br>
+delay(2500);  <br>
+ myservo2.write(90);              <br>
+  delay(500);  <br>
+}</p></div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Design-->
+            <section class="resume-section" id="design">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Design</h2>
+                      <div class="subheading mb-3">The Design</div>
+                      
+                      <img class="img-fluid img-profile mx-auto mb-2" src="assets/img/colorsorter.jpg" alt="..." />
+    
+                    
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Test-->
+            <section class="resume-section" id="test">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Test</h2>
+                      <div class="subheading mb-3">The Group</div>
+                      
+                      <img class="img-fluid img-profile mx-auto mb-2" src="assets/img/test.jpg" alt="..." />
+    
+                    
+                </div>
+            </section>
+        </div>
+        <!-- floating chat -->
+<div
+    class="container"
+    style="
+      width: fit-content;
+      position: fixed;
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      z-index:100000;
+      bottom: 20px; right: 30px; align-items: flex-end;flex-direction: column
+    "
+  >
+    <iframe
+    id="box"
+    src=https://app.flowcharts.ai/web_to_sms/Nyrcwdt6WcgNFM4rDEpncwLQlz33
+    width="300"
+    height="650"
+    name="box"
+    style="display: none; border-radius: 8px; border: none; z-index:100000;"
+  ></iframe>
+    <div
+      id="btn"fix chatbot mobile
+      onclick="handleToggle()"
+      style="
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background-color: brown;
+        margin: 10px;
+        cursor: pointer;
+        z-index:100000;
+      "
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="24px"
+        viewBox="0 0 24 24"
+        width="24px"
+        fill="#FFFFFF"
+      >
+        <path d="M0 0h24v24H0V0z" fill="none" />
+        <path
+          d="M15 4v7H5.17l-.59.59-.58.58V4h11m1-2H3c-.55 0-1 .45-1 1v14l4-4h10c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm5 4h-2v9H6v2c0 .55.45 1 1 1h11l4 4V7c0-.55-.45-1-1-1z"
+        />
+      </svg>
+    </div>
+  </div>
+  <script>
+  window.onload = getData;
+  const iframe = document.getElementById("box");
+  const btn = document.getElementById("btn");
+  function handleToggle() {
+    iframe.style.display === "none"
+      ? (iframe.style.display = "block")
+      : (iframe.style.display = "none");
+  }
+
+  function getData() {
+    var eventMethod = window.addEventListener
+      ? "addEventListener"
+      : "attachEvent";
+    var eventer = window[eventMethod];
+    var messageEvent = eventMethod === "attachEvent" ? "onmessage" : "message";
+    eventer(messageEvent, (e) => {
+      const { complete } = e.data;
+      if (complete) {
+        iframe.style.display = "none";
+        btn.style.display = "none";
+      }
+    });
+  }
+  </script>
+  
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
